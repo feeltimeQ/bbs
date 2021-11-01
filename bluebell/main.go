@@ -54,8 +54,4 @@ func main() {
 		return
 	}
 
-
-    fmt.Printf(dsadsds)
-
-
 }
