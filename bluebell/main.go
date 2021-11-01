@@ -6,6 +6,8 @@ import (
 	"backend/bluebell/dao/redis"
 	"backend/bluebell/logger"
 	"backend/bluebell/pkg/snowflake"
+	"backend/bluebell/routes"
+	"backend/bluebell/settings"
 	"fmt"
 	"os"
 )
@@ -45,10 +47,13 @@ func main() {
 		return
 	}
 	// 注册路由
-	r := router.SetupRouter(setting.Conf.Mode)
+	r := routes.SetupRouter(setting.Conf.Mode)
 	err := r.Run(fmt.Sprintf(":%d", setting.Conf.Port))
 	if err != nil {
 		fmt.Printf("run server failed, err:%v\n", err)
 		return
 	}
+
+
+
 }
