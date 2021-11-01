@@ -53,6 +53,8 @@ func main() {
 		fmt.Printf("run server failed, err:%v\n", err)
 		return
 	}
-	fmt.Printf(dsadsa)
+	fmt.Printf(dasds)
+	fmt.Printf(fasf)
+	fmt.Printf(fasfas)
 
 }
